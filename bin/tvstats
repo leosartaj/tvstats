@@ -42,4 +42,4 @@ if __name__ == '__main__':
     data = scraper.parse(args.url)
     json_data = jh.dict_to_json(data)
 
-    args.path.write(str(data))
+    args.path.write(str(json_data))

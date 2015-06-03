@@ -42,5 +42,5 @@ def graph(data):
     plt.xlabel('Episode Number')
     plt.ylabel('Ratings')
     x, y = graphdata(data)
-    plt.plot(x, y)
+    plt.plot(x, y, 'r')
     plt.show()

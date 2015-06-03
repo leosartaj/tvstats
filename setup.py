@@ -19,7 +19,7 @@ setup(
     keywords = 'tv tvseries series IMBD scrape crawl',
     url = 'http://github.com/leosartaj/tvstats',
     packages=find_packages(),
-    scripts=['bin/tvs'],
+    scripts=['bin/tvstats'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
