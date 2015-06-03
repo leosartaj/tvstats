@@ -20,6 +20,7 @@ setup(
     url = 'http://github.com/leosartaj/tvstats',
     packages=find_packages(),
     scripts=['bin/tvstats'],
+    install_requires = ['beautifulsoup4'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',

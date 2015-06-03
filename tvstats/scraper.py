@@ -1,3 +1,5 @@
+"""Functions for scraping IMDB"""
+
 from bs4 import BeautifulSoup as bs
 import requests
 import re
@@ -11,6 +13,7 @@ def get_html(link):
 
 
 def get_a(html, find=''):
+    """Finds all the 'a' tags with find in their href"""
     links = []
     for a in html.find_all('a'):
         if a.get('href').find(find) != -1:
@@ -19,6 +22,7 @@ def get_a(html, find=''):
 
 
 def episode_list(a):
+    """List of all episodes of a season"""
     html = get_html(ROOT + a.get('href'))
     div = html.find('div', {'class': "list detail eplist"})
     links = []
@@ -28,6 +32,10 @@ def episode_list(a):
 
 
 def get_rating(html):
+    """Rating of an episode
+    Works for any page with a rating
+    Incase no rating found, returns None
+    """
     try:
         div = html.find('div', {'class': "titlePageSprite star-box-giga-star"})
         return div.text.strip(' ')
@@ -53,6 +61,7 @@ def get_season_epi_num(html):
 
 
 def parse_episode(a):
+    """Collects data related to an episode"""
     d = {}
     html = get_html(ROOT + a.get('href'))
     d['rating'] = get_rating(html)
@@ -62,6 +71,9 @@ def parse_episode(a):
 
 
 def parse(link):
+    """Parses a Tv Series
+    returns the dataset as a dictionary
+    """
     html = get_html(link)
 
     data = {'rating': get_rating(html),

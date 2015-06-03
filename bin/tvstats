@@ -21,7 +21,9 @@ def setup_parser():
                                      conflict_handler='resolve',\
                                      description=description)
 
-    help = "IMDB url. Should point to homepage of a Tv Series. eg. "
+    help = "IMDB url. Should point to homepage of a Tv Series.\
+            eg. http://www.imdb.com/title/tt0108778/?ref_=fn_al_tt_1"
+
     parser.add_argument('url', type=str, help=help)
 
     help = "Current version of tvstats"
