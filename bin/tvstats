@@ -1,0 +1,45 @@
+#!/usr/bin/python2
+
+import argparse
+from tvstats import scraper
+
+
+try:
+    from tvstats import __desc__ # try to get version number
+except ImportError:
+    __desc__ = 'UNKNOWN'
+
+
+def setup_parser():
+    """
+    Generates the parser
+    """
+    description = 'Scrape data of all the episodes of a Tv Series from IMDB'
+    parser = argparse.ArgumentParser(add_help=True, \
+                                     conflict_handler='resolve',\
+                                     description=description)
+
+    help = "IMDB url. Should point to homepage of a Tv Series. eg. "
+    parser.add_argument('url', type=str, help=help)
+
+    help = "Current version of tvstats"
+    parser.add_argument('--version', '-v',  action='version', help=help,\
+                        version=__desc__)
+
+    help = "Path of file to save the output"
+    parser.add_argument('--file', '-f',  type=str, default=None, help=help,\
+                        dest='path')
+    return parser
+
+
+if __name__ == '__main__':
+    parser = setup_parser()
+    args = parser.parse_args()
+
+    data = scraper.parse(args.url)
+
+    if args.path:
+        with open(args.path, 'w') as f:
+            f.write(str(data))
+    else:
+        print(data)
