@@ -47,7 +47,10 @@ def get_name_date(html):
     head = html.find('h1', {'class': "header"})
     spans = head.findChildren()
     name = spans[0].text
-    date = spans[1].text[1:-1]
+    if len(spans) == 2:
+        date = spans[1].text[1:-1]
+    else:
+        date = None
     return name, date
 
 

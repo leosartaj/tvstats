@@ -4,10 +4,10 @@ Scrape data of all the episodes of a Tv Series from IMDB.
 
 Installation
 ============
-tvstats can be installed using pip
+Run
 ::
 
-    pip install tvstats
+    python setup.py install
 
 Dependencies
 ============
