@@ -41,25 +41,25 @@ Here are my reasons:
 
 Examples
 ========
-.. |here| replace:: data/jsonData
-.. |Graphs| replace:: data/graphs
+.. _here: https://github.com/leosartaj/tvstats/tree/master/data/jsonData
+.. _Graphs: replace:: https://github.com/leosartaj/tvstats/tree/master/data/graphs
 
-All the datasets can be found |here|. |Graphs| were made using ``graph`` function in 'graph.py'.
+All the datasets can be found here_. Graphs_ were made using ``graph`` function in 'graph.py'.
 
 Friends
 -------
 
-.. image:: data/graphs/friends.png
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/friends.png
 
 Game Of Thrones
 ---------------
 
-.. image:: data/graphs/gameOfThrones.png
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/gameOfThrones.png
 
 Breaking Bad
 -------------
 
-.. image:: data/graphs/breakingBad.png
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/breakingBad.png
 
 Bugs
 ====
