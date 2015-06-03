@@ -42,7 +42,7 @@ Here are my reasons:
 Examples
 ========
 .. _here: https://github.com/leosartaj/tvstats/tree/master/data/jsonData
-.. _Graphs: replace:: https://github.com/leosartaj/tvstats/tree/master/data/graphs
+.. _Graphs: https://github.com/leosartaj/tvstats/tree/master/data/graphs
 
 All the datasets can be found here_. Graphs_ were made using ``graph`` function in 'graph.py'.
 
@@ -60,6 +60,41 @@ Breaking Bad
 -------------
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/breakingBad.png
+
+How I Met Your Mother
+---------------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/himym.png
+
+Prison Break
+------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/prisonBreak.png
+
+Hannibal
+---------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/hannibal.png
+
+Suits
+------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/suits.png
+
+Arrow
+------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/arrow.png
+
+Person Of Interest
+------------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/personOfInterest.png
+
+Homeland
+---------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/homeland.png
 
 Bugs
 ====
