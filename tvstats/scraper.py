@@ -1,17 +1,9 @@
 from bs4 import BeautifulSoup as bs
 import requests
 import re
-import json
 
 
 ROOT = "http://imdb.com"
-
-
-def dict_to_json(json_dict):
-    """
-    convert from a dictionary to json
-    """
-    return json.dumps(json_dict)
 
 
 def get_html(link):
@@ -38,7 +30,7 @@ def episode_list(a):
 def get_rating(html):
     try:
         div = html.find('div', {'class': "titlePageSprite star-box-giga-star"})
-        return div.text
+        return div.text.strip(' ')
     except AttributeError:
         return None
 
@@ -65,8 +57,8 @@ def parse_episode(a):
     html = get_html(ROOT + a.get('href'))
     d['rating'] = get_rating(html)
     d['episode-name'], d['date'] = get_name_date(html)
-    d['season'], d['episode'] = get_season_epi_num(html)
-    return d
+    season, d['episode-num'] = get_season_epi_num(html)
+    return season, d
 
 
 def parse(link):
@@ -77,9 +69,13 @@ def parse(link):
 
     div = html.find(id="title-episode-widget")
     season_tags = get_a(div, find="season=")
-    l = []
+    episodes = {}
     for slink in season_tags:
         for e in episode_list(slink):
-            l.append(parse_episode(e))
-    data['episodes'] = l
-    return dict_to_json(data)
+            season, d = parse_episode(e)
+            if season in episodes:
+                episodes[season].append(d)
+            else:
+                episodes[season] = [d]
+    data['episodes'] = episodes
+    return data

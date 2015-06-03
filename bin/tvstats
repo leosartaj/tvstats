@@ -1,7 +1,9 @@
 #!/usr/bin/python2
 
+import sys
 import argparse
-from tvstats import scraper
+from tvstats import scraper, graph
+from tvstats import jsonhelper as jh
 
 
 try:
@@ -27,8 +29,9 @@ def setup_parser():
                         version=__desc__)
 
     help = "Path of file to save the output"
-    parser.add_argument('--file', '-f',  type=str, default=None, help=help,\
-                        dest='path')
+    parser.add_argument('--file', '-f',  type=argparse.FileType('w'),\
+                        default=sys.stdout, help=help, dest='path')
+
     return parser
 
 
@@ -37,9 +40,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     data = scraper.parse(args.url)
+    json_data = jh.dict_to_json(data)
 
-    if args.path:
-        with open(args.path, 'w') as f:
-            f.write(str(data))
-    else:
-        print(data)
+    args.path.write(str(data))
