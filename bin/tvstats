@@ -2,7 +2,7 @@
 
 import sys
 import argparse
-from tvstats import scraper, graph
+from tvstats import scraper
 from tvstats import jsonhelper as jh
 
 
