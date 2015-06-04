@@ -57,10 +57,13 @@ def get_name_date(html):
 def get_season_epi_num(html):
     head = html.find('h2', {'class': "tv_header"})
     spans = head.findChildren()
-    season, epi = spans[1].text.split(',')
-    season = re.search('\d+', season).group()
-    epi = re.search('\d+', epi).group()
-    return season, epi
+    if len(spans) == 2:
+        season, epi = spans[1].text.split(',')
+        season = re.search('\d+', season).group()
+        epi = re.search('\d+', epi).group()
+        return season, epi
+    else:
+        return None, None
 
 
 def parse_episode(a):

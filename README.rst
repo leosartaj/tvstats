@@ -39,6 +39,12 @@ Here are my reasons:
 * Graphs are fun.
 * Lastly, I wanted to test out ``BeautifulSoup4`` :).
 
+Issues, Bugs, Graphs?
+=====================
+.. |issues| replace:: https://github.com/leosartaj/tvstats/issues
+
+Let me knwow about the issues at |issues|. Feel free to add new graphs or improve.
+
 Examples
 ========
 .. _here: https://github.com/leosartaj/tvstats/tree/master/data/jsonData
@@ -96,8 +102,43 @@ Homeland
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/homeland.png
 
-Bugs
-====
-.. |issues| replace:: https://github.com/leosartaj/tvstats/issues
+House Of Cards
+--------------
 
-For filing bugs raise an issue at |issues|
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/houseOfCards.png
+
+How to Get Away With Murder
+----------------------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/howToGetAwayWithMurder.png
+
+Orange Is The New Black
+-----------------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/orangeIsTheNewBlack.png
+
+Shameless
+---------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/shameless.png
+
+Sons Of Anarchy
+----------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/sonsOfAnarchy.png
+
+Spartacus
+---------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/spartacus.png
+
+The Walking Dead
+-----------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/theWalkingDead.png
+
+Vikings
+-------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/vikings.png
+
