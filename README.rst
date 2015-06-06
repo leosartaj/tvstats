@@ -142,3 +142,7 @@ Vikings
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/vikings.png
 
+Flash
+------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/flash.png
