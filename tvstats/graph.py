@@ -27,4 +27,9 @@ def graph(data):
     plt.ylabel('Ratings')
     x, y = graphdata(data)
     plt.plot(x, y, 'r')
+    x1, x2, y1, y2 = plt.axis()
+    y2 = 10
+    if y1 > 7:
+        y1 = 7
+    plt.axis([x1, x2, y1, y2])
     plt.show()
