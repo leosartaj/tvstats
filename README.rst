@@ -146,3 +146,8 @@ Flash
 ------
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/flash.png
+
+The Wire
+--------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/theWire.png
