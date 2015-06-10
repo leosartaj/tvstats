@@ -156,3 +156,8 @@ The Wire
 --------
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/theWire.png
+
+Continuum
+---------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/continuum.png
