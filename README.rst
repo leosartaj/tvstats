@@ -87,6 +87,11 @@ Suits
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/suits.png
 
+Dexter
+------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/dexter.png
+
 Arrow
 ------
 
