@@ -67,6 +67,11 @@ Breaking Bad
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/breakingBad.png
 
+The Big Bang Theory
+-------------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/tbbt.png
+
 How I Met Your Mother
 ---------------------
 
