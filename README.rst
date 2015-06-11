@@ -166,3 +166,8 @@ Continuum
 ---------
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/continuum.png
+
+Lost
+----
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/lost.png
