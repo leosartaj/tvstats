@@ -171,3 +171,8 @@ Lost
 ----
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/lost.png
+
+The Sopranos
+------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/theSopranos.png
