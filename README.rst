@@ -176,3 +176,8 @@ The Sopranos
 ------------
 
 .. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/theSopranos.png
+
+True Detective
+--------------
+
+.. image:: https://raw.githubusercontent.com/leosartaj/tvstats/master/data/graphs/trueDetective.png
