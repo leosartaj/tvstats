@@ -43,7 +43,7 @@ Issues, Bugs, Graphs?
 =====================
 .. |issues| replace:: https://github.com/leosartaj/tvstats/issues
 
-Let me knwow about the issues at |issues|. Feel free to add new graphs or improve.
+Let me know about the issues at |issues|. Feel free to add new graphs or improve the existing one's.
 
 Examples
 ========
